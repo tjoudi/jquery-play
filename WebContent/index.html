@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="resources/js/libs/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="resources/js/libs/jquery-ui.js"></script>
+<script type="text/javascript" src="resources/js/libs/underscore.js"></script>
+<script type="text/javascript" src="resources/js/libs/backbone-min.js"></script>
+<script type="text/javascript" src="resources/js/app/app.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+	<div id="main-div"></div>
+
+	<input  id="birth-date" />
+
+	<!--
+	<article>
+		<figure
+			data-image-list="resources/imges/1.png,resources/imges/2.png,resources/imges/3.png">
+			<img data-src="resources/imges/blank.png"
+				src="resources/imges/blank.png" />
+		</figure>
+	</article>
+
+-->
+	<script>
+/* var Book = Backbone.Model.extend({}, {
+    areBooksGreat: function() {
+        console.log("yes they are!");
+    }
+});
+Book.areBooksGreat(); // alerts "yes they are!"
+var book = new Book();
+//book.areBooksGreat(); // fails because static methods must be called on a class
+
+
+var mythicalAnimals = ['Unicorn', 'Dragon', 'Honest Politician'];
+_.each(mythicalAnimals, function(animalName, index) {
+    console.log('Animal #' + index + ' is ' + animalName);
+});
+
+
+//var mythicalAnimals = ['Unicorn', 'Dragon', 'Honest Politician'];
+for (var index = 0; index < mythicalAnimals.length; index++) {
+    var animalName = mythicalAnimals[index];
+    console.log('Animal #' + index + ' is ' + animalName);
+} 
+
+
+//var mythicalAnimals = ['Unicorn', 'Dragon', 'Honest Politician'];
+for (var index in mythicalAnimals) {
+    var animalName = mythicalAnimals[index];
+    console.log('Animal #' + index + ' is ' + animalName);
+} */
+/*
+var imageStuff = $("img");
+imageStuff.mouseenter(function() {
+ 
+	imageStuff.on("mousemove",  function (event) 
+	{
+	    var yPos = event.pageY;
+	    $images = $("figure").data("image-list");
+	    var array = $images.split(',');
+	    
+	    if (yPos > 10) {
+	        imageStuff.attr("src", array[0]);
+	        //console.log("coor: " + yPos + " img: " + array[0])
+	    }
+	    if (yPos > 35) {
+	        imageStuff.attr("src", array[1]);
+	        //console.log("coor: " + yPos + " img: " + array[1])
+	    }
+	    if (yPos > 65) {
+	        imageStuff.attr("src", array[2]);
+	        //console.log("coor: " + yPos + " img: " + array[2])
+	    }
+	});
+
+});
+
+imageStuff.click(function (){
+	console.log("selected image is: " + imageStuff.attr("src"));
+	imageStuff.off("mousemove");
+});
+
+
+var z = 1;
+var book = new Backbone.Model({pages: 50});
+book.on('change:pages', function() { // triggers when the "pages" of book  change
+    console.log('the number of pages changed!' + z++);
+});
+book.set('pages', 51); // will alert "the number of pages has changed"
+book.off('changes:pages');
+console.log(book);
+book.set('pages', 52); // will no longer alert
+
+
+
+var Author = Backbone.Model.extend({
+    listenForDeathOfRival: function(rival) {
+        rival.on('destroy', function celebrateRivalDeath() {
+            console.log('Hurray!  I, ' + this.get('name') + ', hated ' + 
+                  rival.get('name') + '!');
+        }, this); // "this" is our "context" argument
+    }
+});
+var keats = new Author({name: 'John Keats'});
+var byron = new Author({name: 'Lord Byron'});
+byron.listenForDeathOfRival(keats);
+keats.destroy(); // will alert "Hurray!  I, Lord Byron, hated  John Keats!"
+*/
+</script>
+</body>
+</html>
